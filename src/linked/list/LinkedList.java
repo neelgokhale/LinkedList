@@ -151,6 +151,11 @@ public class LinkedList {
         return counter;
     }
 
+    /**
+     * Delete the last node in linked list
+     * @param list linked list object
+     * @return list without end node
+     */
     public static LinkedList deleteEndNode(LinkedList list) {
         Node currNode = list.head, prevNode = null;
 
@@ -163,6 +168,17 @@ public class LinkedList {
                 break;
             }
         }
+        return list;
+    }
+
+    /**
+     * Delete head node in linked list
+     * @param list linked list object
+     * @return list without head node
+     */
+    public static LinkedList deleteHeadNode(LinkedList list) {
+        Node currNode = list.head;
+        list.head = currNode.next;
         return list;
     }
 }

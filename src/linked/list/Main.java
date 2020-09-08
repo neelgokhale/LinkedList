@@ -20,6 +20,8 @@ public class Main {
         LinkedList.lengthOfList(list);
         LinkedList.deleteEndNode(list);
         LinkedList.printList(list);
+        LinkedList.deleteHeadNode(list);
+        LinkedList.printList(list);
 
     }
 }
